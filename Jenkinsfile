@@ -31,15 +31,15 @@ pipeline {
                 script {
                     if (params.ENVIRONMENT == 'dev') {
                         // Set environment variables for dev environment
-                        env.GCP_PROJECT = 'sharp-bivouac-448009-s0'
+                        env.GCP_PROJECT = 'revi-project-449906'
                         env.GCP_REGION = 'us-central1'
                     } else if (params.ENVIRONMENT == 'staging') {
                         // Set environment variables for staging environment
-                        env.GCP_PROJECT = 'sharp-bivouac-448009-s0'
+                        env.GCP_PROJECT = 'revi-project-449906'
                         env.GCP_REGION = 'us-central1'
                     } else if (params.ENVIRONMENT == 'prod') {
                         // Set environment variables for prod environment
-                        env.GCP_PROJECT = 'sharp-bivouac-448009-s0'
+                        env.GCP_PROJECT = 'revi-project-449906'
                         env.GCP_REGION = 'us-central1'
                     }
                     echo "Deploying to ${params.ENVIRONMENT} environment"
